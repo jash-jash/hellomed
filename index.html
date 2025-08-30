@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR-Based Attendance Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- QR Scanner Login Screen -->
+  <div id="qr-scanner" class="screen active">
+    <div class="container">
+      <div class="login-card">
+        <div class="qr-icon">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="5" height="5" />
+            <rect x="3" y="16" width="5" height="5" />
+            <rect x="16" y="3" width="5" height="5" />
+            <path d="m5 5 3 3" />
+            <path d="m5 19 3-3" />
+            <path d="m19 5-3 3" />
+            <path d="M9 12h6" />
+            <path d="M12 9v6" />
+          </svg>
+        </div>
+        <h1>Attendance Portal</h1>
+        <p>Scan QR code to access the portal</p>
+
+        <div class="scan-area">
+          <div class="qr-frame">
+            <div class="corner top-left"></div>
+            <div class="corner top-right"></div>
+            <div class="corner bottom-left"></div>
+            <div class="corner bottom-right"></div>
+            <div class="scan-line"></div>
+          </div>
+        </div>
+
+        <button class="scan-button">Scan QR Code</button>
+        <div class="divider">or</div>
+        <button class="manual-button">Enter Code Manually</button>
+
+        <div class="demo-info">
+          <p>Demo: Use "admin123" for manual entry</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
